@@ -1,6 +1,6 @@
 [package]
 name = "hpn-client"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Tim Hammerquist"]
 homepage = "https://github.com/penryu/hpn-client"
 repository = "https://github.com/penryu/hpn-client"
@@ -17,6 +17,9 @@ include = ["src/", "COPYRIGHT.txt", "LICENSE.txt", "README.md"]
 [[bin]]
 name = "hpnc"
 path = "src/main.rs"
+
+[profile.release]
+strip = "symbols"
 
 [dependencies]
 hpn = "0.6.1"
