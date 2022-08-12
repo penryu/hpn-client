@@ -1,25 +1,8 @@
 [package]
 name = "hpn-client"
-version = "0.1.1"
+version = "0.1.3"
 authors = ["Tim Hammerquist"]
-homepage = "https://github.com/penryu/hpn-client"
-repository = "https://github.com/penryu/hpn-client"
-keywords = ["calculator", "rpn", "hp", "client"]
 edition = "2021"
 license = "MIT"
 readme = "README.md"
-description = """
-Binary wrapping the hpn RPN calculator library
-"""
-
-include = ["src/", "COPYRIGHT.txt", "LICENSE.txt", "README.md"]
-
-[[bin]]
-name = "hpnc"
-path = "src/main.rs"
-
-[profile.release]
-strip = "symbols"
-
-[dependencies]
-hpn = "0.6.1"
+description = "Deprecated. See crate hpnc."
